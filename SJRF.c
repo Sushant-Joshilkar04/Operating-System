@@ -3,7 +3,7 @@
 #include<limits.h>
 
 void display2(int n,int pid[],int at[],int bt[],int st[],int et[],int wt[],int tat[]){
-    printf("PID   Arrival  Burst  Start   End   waiting  Turn_Around\n");
+    printf("PID   Arrival  Burst  Start    End   waiting  Turn_Around\n");
     for(int i=0;i<n;i++){
         printf("%d\t %d \t%d  \t%d \t%d \t%d \t%d\n",pid[i],at[i],bt[i],st[i],et[i],wt[i],tat[i]);
     }
@@ -48,9 +48,7 @@ void answer(int n, int pid[], int at[], int bt[], int rt[]){
             continue;
         }
 
-        if (st[shortest] == -1) {
-            st[shortest] = curr_time;
-        }
+        if (st[shortest] == -1) st[shortest] = curr_time;
 
         rt[shortest]--;
 
