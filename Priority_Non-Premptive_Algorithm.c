@@ -2,10 +2,11 @@
 #include <stdbool.h>
 #include<limits.h>
 
+
 void display2(int n,int pid[],int at[],int bt[],int priority[],int st[],int et[],int wt[],int tat[]){
-    printf("PID Arrival Burst Priority Start End waiting Turn_Around\n");
+    printf("PID   Arrival  Burst Priority  Start    End   waiting  Turn_Around\n");
     for(int i=0;i<n;i++){
-        printf("%d\t %d \t%d \t%d \t%d \t%d \t%d \t%d\n",pid[i],at[i],bt[i],priority[i],st[i],et[i],wt[i],tat[i]);
+        printf("%d\t %d \t%d  \t%d \t%d \t%d \t%d \t%d\n",pid[i],at[i],bt[i],priority[i],st[i],et[i],wt[i],tat[i]);
     }
 }
 
