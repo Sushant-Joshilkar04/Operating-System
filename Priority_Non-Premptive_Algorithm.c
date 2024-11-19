@@ -1,7 +1,5 @@
 #include<stdio.h>
 #include <stdbool.h>
-#include<limits.h>
-
 
 void display2(int n,int pid[],int at[],int bt[],int priority[],int st[],int et[],int wt[],int tat[]){
     printf("PID   Arrival  Burst Priority  Start    End   waiting  Turn_Around\n");
