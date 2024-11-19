@@ -72,7 +72,8 @@ int main()
         bubbleSortDescending(arr,n);
         for(int i=0;i<n;i++){
             printf("i= %d  arr[i]= %d p = %d ppid = %d \n",i,arr[i],getpid(),getppid());
-            sleep(5);
+            sleep(1); // Zombie
+            // sleep(10);  // orphan
         }
         printf("\n");
         printf("Child procees terminates\n");
@@ -80,7 +81,8 @@ int main()
         bubbleSortAscending(arr, n);
         for(int i=0;i<n;i++){
             printf("i= %d  arr[i]= %d p = %d ppid = %d \n",i,arr[i],getpid(),getppid());
-            sleep(5);
+            sleep(10); // Zombie
+          // sleep(1); // orphan
         }
         printf("\n");
         printf("Parent procees terminates\n");
