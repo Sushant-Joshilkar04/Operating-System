@@ -84,9 +84,10 @@ int main()
             sleep(10); // Zombie
           // sleep(1); // orphan
         }
+       // wait();
         printf("\n");
         printf("Parent procees terminates\n");
-        // wait();
+
     }
   printf("PID %d Parent pid is :%d, \n",getpid(),getppid());
 return 0;    
